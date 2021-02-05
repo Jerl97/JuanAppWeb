@@ -29,9 +29,9 @@ namespace JuanWeb.Controllers
         }
 
         
-        public IActionResult Resultado(string nombre , string apellido)
+        public IActionResult Resultado(string nombre , string apellido, string profesion)
         {
-            ViewBag.Datos = nombre + apellido ;
+            ViewBag.Datos = nombre + apellido + profesion;
             return View();
         }
 
